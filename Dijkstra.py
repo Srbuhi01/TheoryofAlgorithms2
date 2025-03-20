@@ -3,7 +3,8 @@ def dijkstra(graph, n, start):
     dist = [float('inf')] * n
     dist[start] = 0
 
-    pq = [(0, start)]      # priority queue
+    # priority queue
+    pq = [(0, start)]     
 
     while pq:
         pq.sort()  
@@ -23,7 +24,6 @@ def dijkstra(graph, n, start):
 
     return dist
 
-# Define graph based on the image
 graph = {
     0: [{'to': 1, 'cost': 4}, {'to': 2, 'cost': 1}],
     1: [{'to': 3, 'cost': 1}],
@@ -32,7 +32,8 @@ graph = {
     4: []  
 }
 
-n = 5        # Number of nodes
+# Number of nodes
+n = 5        
 start = 0
 
 print(dijkstra(graph, n, start))
