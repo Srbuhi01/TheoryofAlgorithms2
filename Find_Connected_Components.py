@@ -1,5 +1,5 @@
 def find_connected_components(matrix):
-    n = len(matrix)  # գագաթների քանակը
+    n = len(matrix)  
     visited = [False] * n
     components = []
 
@@ -19,12 +19,12 @@ def find_connected_components(matrix):
     return components
 
 adj_matrix = [
-    [0, 1, 1, 0, 0, 0],  # 0
-    [1, 0, 1, 0, 0, 0],  # 1
-    [1, 1, 0, 0, 0, 0],  # 2
-    [0, 0, 0, 0, 1, 0],  # 3
-    [0, 0, 0, 1, 0, 0],  # 4
-    [0, 0, 0, 0, 0, 0]   # 5
+    [0, 1, 1, 0, 0, 0],  
+    [1, 0, 1, 0, 0, 0],  
+    [1, 1, 0, 0, 0, 0],  
+    [0, 0, 0, 0, 1, 0],  
+    [0, 0, 0, 1, 0, 0],  
+    [0, 0, 0, 0, 0, 0]   
 ]
 
 components = find_connected_components(adj_matrix)
